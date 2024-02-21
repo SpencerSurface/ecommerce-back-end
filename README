@@ -2,11 +2,23 @@
 
 ## Description
 
+This project is an example of what the backend of an e-commerce site might look like. It allows users to interact with an e-commerce database through the use of an API.
+
+The project is written in JavaScript to be run in Node.js, uses Express as its web server, MySQL as its SQL server, and Sequelize as its ORM.
+
+In completing this project, I learned that Sequelize can make writing API routes that interact with a SQL server much more simpler than doing the same using raw SQL.
+
 ## Installation
+
+Install this project by cloning the repository from GitHub, then navigating to the project directory in your terminal and running `npm install`. The database can be created by running `\. schema.sql` in MySQL, and can be seeded by running `npm run seed` (or `node seeds`).
+
+To connect your app to the database, make sure you have the MySQL daemon running, and that you have created an environment variable file (`.env`) in the project directory. In the `.env` file, include `DB_NAME=ecommerce_db` and set `DB_USER` and `DB_PASSWORD` to your MySQL username and password.
 
 ## Usage
 
-A walkthrough how to interact with the back-end using Thunder Client (similar to Insomnia) is provided in the following video: [Walkthrough video](./walkthrough.webm). The video shows creating the database schema, seeding the database, starting the server, and testing every defined route using requests sent from Thunder Client.
+To use this backend, make HTTP requests to its API routes. When the server starts running, it will print which port it is listening on. The API routes are grouped according to which of three models they primarily access: `products`, `categories`, or `tags`. There are five routes for each model: GET `/api/<MODEL>` to get all items, GET `/api/<MODEL>/<ID>` to get an item by ID, POST `/api/<MODEL>` to create a new item, UPDATE `/api/<MODEL>/<ID>` to update an existing item, and DELETE `/api/<MODEL>/<ID>` to delete an existing item.
+
+A walkthrough how to interact with the back-end using Thunder Client (a Visual Studio Code plugin similar to Insomnia) is provided in the following video: [Walkthrough video](./walkthrough.webm). The video shows creating the database schema, seeding the database, starting the server, and testing every defined route using requests sent from Thunder Client.
 
 ## Credits
 
