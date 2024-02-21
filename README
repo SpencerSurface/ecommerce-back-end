@@ -1,0 +1,15 @@
+# E-Commerce Backend
+
+## Description
+
+## Installation
+
+## Usage
+
+## Credits
+
+This project consists largely of code provided by edX Boot Camps LLC. The portions of code that I wrote include all routes in `routes/api/category-routes.js`, all routes in `routes/api/tag-routes.js`, the GET and DELETE routes in `routes/api/product-routes.js`, the associations in `models/index.js`, and the model column definitions in `models/Category.js`, `models/Product.js`, `models/ProductTag.js`, and `models/Tag.js`.
+
+## License
+
+No license at this time.
