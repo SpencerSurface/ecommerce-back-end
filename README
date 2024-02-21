@@ -6,6 +6,8 @@
 
 ## Usage
 
+A walkthrough how to interact with the back-end using Thunder Client (similar to Insomnia) is provided in the following video: [Walkthrough video](./walkthrough.webm). The video shows creating the database schema, seeding the database, starting the server, and testing every defined route using requests sent from Thunder Client.
+
 ## Credits
 
 This project consists largely of code provided by edX Boot Camps LLC. The portions of code that I wrote include all routes in `routes/api/category-routes.js`, all routes in `routes/api/tag-routes.js`, the GET and DELETE routes in `routes/api/product-routes.js`, the associations in `models/index.js`, and the model column definitions in `models/Category.js`, `models/Product.js`, `models/ProductTag.js`, and `models/Tag.js`.
